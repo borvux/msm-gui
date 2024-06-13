@@ -45,7 +45,7 @@ class ActorsController < ApplicationController
     the_id = params.fetch("path_id")
 
     # find the actor records using the id 
-    matching_actors = Movie.where({ :id => the_id })
+    matching_actors = Actor.where({ :id => the_id })
     update_actors = matching_actors.at(0)
 
     # update the informations
